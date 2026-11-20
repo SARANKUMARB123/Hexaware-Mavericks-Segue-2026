@@ -1,0 +1,106 @@
+-- TASK 4
+
+1. Policies Expiring in the Next 30 Days
+Expected Result:
+Displays all policies that will expire within the next 30 days.
+Columns:
+- Policy ID
+- Policy Number
+- Customer ID
+- Expiry Date
+
+2. Premium Collected Per Product
+Expected Result:
+Displays the total premium collected for each insurance product.
+Columns:
+- Product Name
+- Total Premium
+
+3. Customers with More Than One Active Policy
+Expected Result:
+Lists customers who have more than one active insurance policy.
+Columns:
+- Customer ID
+- Customer Name
+- Active Policies
+
+4. Claim Ratio Per Product
+Expected Result:
+Displays the claim ratio for each insurance product based on the number of claims and policies.
+Columns:
+- Product Name
+- Claim Ratio
+
+5. Policies Without Claims
+Expected Result:
+Displays all policies for which no claim has been filed.
+Columns:
+- Policy ID
+- Policy Number
+
+6. Average Premium by Age Band
+Expected Result:
+Displays the average premium amount for each customer age group.
+Columns:
+- Age Band
+- Average Premium
+
+7. Monthly New Policies
+Expected Result:
+Displays the number of new policies issued each month.
+Columns:
+- Policy Month
+- Total Policies
+
+8. Top 5 Agents by Premium
+Expected Result:
+Displays the five agents who have collected the highest premium amounts.
+Columns:
+- Agent ID
+- Total Premium
+
+9. Policy Age
+Expected Result:
+Displays the age of each policy in years.
+Columns:
+- Policy ID
+- Policy Number
+- Policy Age (Years)
+
+10. Next Renewal Date
+Expected Result:
+Displays the renewal date after adding one year to the policy expiry date.
+Columns:
+- Policy ID
+- Policy Number
+- Next Renewal Date
+
+11. Policy Age Band
+Expected Result:
+Displays the age category of each policy.
+Columns:
+- Policy ID
+- Policy Number
+- Policy Age Band
+
+12. Masked Policy Number
+Expected Result:
+Displays policy numbers with the middle characters hidden for security.
+Columns:
+- Policy ID
+- Masked Policy Number
+
+13. Customer-Friendly Policy Report
+Expected Result:
+Displays a formatted report containing customer name, masked policy number, policy age, age band, and next renewal date.
+Columns:
+- Policy ID
+- Masked Policy Number
+- Customer Name
+- Policy Age (Years)
+- Policy Age Band
+- Next Renewal Date
+
+14. WHERE vs HAVING
+Expected Result:
+Demonstrates that WHERE filters rows before grouping, while HAVING filters groups after aggregation.

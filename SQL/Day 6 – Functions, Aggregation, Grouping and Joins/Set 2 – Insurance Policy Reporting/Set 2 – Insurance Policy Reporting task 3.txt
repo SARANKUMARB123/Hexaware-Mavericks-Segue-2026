@@ -1,0 +1,37 @@
+-- TASK 3
+
+Difference Between WHERE and HAVING
+
+WHERE
+- WHERE filters individual rows before grouping takes place.
+- It cannot be used to filter aggregate values such as COUNT(), SUM(), or AVG().
+
+HAVING
+- HAVING filters grouped records after the GROUP BY clause has been applied.
+- It is used with aggregate functions.
+
+Example Using the "Customers with More Than One Active Policy" Query
+
+SELECT
+    c.customer_id,
+    c.customer_name,
+    COUNT(po.policy_id) AS active_policies
+FROM customers c
+JOIN policies po
+ON c.customer_id = po.customer_id
+WHERE po.status = 'Active'
+GROUP BY
+    c.customer_id,
+    c.customer_name
+HAVING COUNT(po.policy_id) > 1;
+
+Explanation
+
+- WHERE po.status = 'Active'
+  Filters only active policies before the grouping operation.
+
+- GROUP BY
+  Groups the remaining records by customer.
+
+- HAVING COUNT(po.policy_id) > 1
+  Returns only those customers whose grouped records contain more than one active policy.
